@@ -2,10 +2,9 @@
 	%h1= @post.title
 	%p= @post.content
 
-
 	#comments
 		%h2
-		= @post.comments.count
+			= @post.comments.count
 			Comments 
 		= render @post.comments
 
