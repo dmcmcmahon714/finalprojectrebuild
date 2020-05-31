@@ -6,3 +6,8 @@
 				Published at
 				= time_ago_in_words(post.created_at)
 				= post.user.email
+			%p.comment.count
+				= link_to post.comments.count, post
+				Comments
+
+				
