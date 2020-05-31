@@ -1,0 +1,23 @@
+!!!
+%html
+%head
+  %title absoluteJAMS
+  = csrf_meta_tags
+  = csp_meta_tag
+  = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+  %link{ rel: "stylesheet", href: "https://fonts.googleapis.com/css?family=Lato", type: "text/css" }
+
+  = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+%body
+  %header.main_header.clearfix
+    #logo
+      %p absoluteJAMS 
+    #buttons
+      = link_to "New Post", new_post_path
+
+  .wrapper
+    %p.notice= notice
+    %p.alert= alert
+
+  .wrapper
+    = yield
