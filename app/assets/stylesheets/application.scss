@@ -23,6 +23,7 @@
 	width: 70%;
 	max-width: 1140px;
 	margin: 0 auto;
+	color: #397CAC;
 }
 
 .clearfix:before, .clearfix:after {
@@ -41,7 +42,7 @@ h1 {
 .main_header {
 	width: 100%;
 	margin: 0 auto;
-	background: white; 
+	background-image: url("https://wallup.net/wp-content/uploads/2016/01/224878-digital_art-abstract-CGI-blue-music-rectangle-lights-748x468.jpg");
 	#logo {
 		text-align: center;
 		font-weight: lighter;
@@ -55,7 +56,7 @@ h1 {
 			letter-spacing: -1px;
 			font-size: 3rem;
 			text-decoration: none;
-			color: #397CAC;
+			color: white;
 		}
 	}
 	#buttons
@@ -84,9 +85,9 @@ h1 {
 				background: #white;
 				padding: .2em .3em;
 				border-radius: 0.1em;
-				border: solid #397CAC;
+				border: solid white;
 				border-width: thin;
-				color: #397CAC;
+				color: white;
 				text-decoration: none;
 				font-weight: 100;
 				margin-right: .9em;
@@ -219,7 +220,7 @@ form {
     font-size: pxtoem(16, 16);
     margin-top: .5em;
     margin-bottom: .5em;
-    
+
   }
   textarea {
     border: 1px solid grey;
