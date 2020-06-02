@@ -6,4 +6,5 @@
 	end
 
 	root 'posts#index'
+	get 'tags/:tag', to: 'posts#index', as: :tag
 end

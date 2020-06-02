@@ -10,6 +10,8 @@
 		= button_to 'Unlike', post_like_path(@post, pre_like), method: :delete
 	- else
 		= button_to 'Like', post_likes_path(@post), method: :post
+	%p
+	Tags: #{raw @post.tags.map(&:name).map { |t| link_to t, tag_path(t) }.join(', ')}
 
 
 #comments

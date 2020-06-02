@@ -6,35 +6,13 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-100.times do
-  User.create(
-    email: Faker::Internet.email,
-    encrypted_password: Faker::Alphanumeric.alphanumeric(number: 10),
+20.times do
+  Tag.create(
+    name: Faker::Music.genre,
   )
 end
 
-100.times do
-  Post.create(
-    title: Faker::Music.genre,
-    content: Faker::Hipster.paragraph,
-    user_id: Faker::Number.between(from: 1, to: 100),
-  )
-end
 
-100.times do
-  Comment.create(
-    comment: Faker::Hipster.paragraph,
-    post_id: Faker::Number.between(from: 1, to: 100),
-    user_id: Faker::Number.between(from: 1, to: 100),
-  )
-end
-
-100.times do
-  Like.create(
-    post_id: Faker::Number.between(from: 1, to: 100),
-    user_id: Faker::Number.between(from: 1, to: 100),
-  )
-end
 
 
 
