@@ -20,7 +20,7 @@
  }
 
 .wrapper {
-	width: 60%;
+	width: 70%;
 	max-width: 1140px;
 	margin: 0 auto;
 }
@@ -34,6 +34,10 @@
 	clear: both;
 }
 
+h1 {
+	color: #397CAC;
+}
+
 .main_header {
 	width: 100%;
 	margin: 0 auto;
@@ -41,7 +45,10 @@
 	#logo {
 		text-align: center;
 		font-weight: lighter;
-		margin-bottom: 1em;
+		margin-bottom: 0;
+		h1 {
+			margin-bottom: .25em;
+		}
 		a {
 			text-transform: uppercase;
 			font-weight: lighter;
@@ -62,9 +69,10 @@
 				color: white;
 				text-decoration: none;
 				font-weight: 100;
-				margin-bottom: 2em;
-				font-size: 1em;
+				margin-bottom: 3em;
+				font-size: .75em;
 				margin-right: 0em;
+				margin-top: 0;
 			}
 		}
 	#tags
@@ -74,15 +82,16 @@
 		a {
 				line-height: 30px;
 				background: #white;
-				padding: .1em .25em;
+				padding: .2em .3em;
 				border-radius: 0.1em;
 				border: solid #397CAC;
 				border-width: thin;
 				color: #397CAC;
 				text-decoration: none;
 				font-weight: 100;
-				margin-left: .5em;
+				margin-right: .9em;
 				font-size: .58em;
+				margin-top: 5em;
 			}
 	}
 }
@@ -91,12 +100,15 @@
 	background: white;
 	padding: 2em 5%;
 	border-radius: .5em;
-	.post {
+	.post {	
+			height: 100%;
 			margin: 1em 0;
-			padding: 1em 0;
-			border-bottom: 1px solid #D1d1d1;
+			padding: 2em;
+			border-top: solid 1px black;
+			
 		.title {
 			margin: 0;
+			text-align: center;
 			a {
 				color: #397CAC;
 				text-decoration: none;
@@ -106,8 +118,9 @@
 		}
 		.date {
 			margin-top: .25rem;
-			font-size: .09rem;
+			font-size: .9rem;
 			color: #B2BAC2;
+			text-align: center;
 		}
 	}
 	}
@@ -130,3 +143,93 @@
 
 	}
 }
+
+.likes, .tags {
+	display: flex;
+	float: left;
+	padding-bottom: 1em;
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+.comment.count {
+	display: flex;
+	float: left;
+	padding-bottom: 1em;
+	
+	margin-left: 1em;
+	margin-right: 1em;
+		a{
+			padding-right: 5px;
+		}
+}
+
+text {
+	padding-left: 2px;
+}
+
+form {
+  max-width: 100%;
+  display: block;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      margin: 0 0 0.25em 0; 
+      clear: both;
+      display: inline-block;
+      width: 100%;
+      &:last-child {
+          margin: 0;    
+        }
+        p {
+          margin: 0;
+          padding: 0;
+          float: left;
+          &.right {
+            float: right;
+          }
+        }     
+        .divider {
+          margin: 0.5em 0 0.5em 0;
+          border: 0;
+          height: 1px;
+          width: 100%;
+          display: block;
+          background-color: blue;
+          background-image: linear-gradient(to right, pink, blue);
+        }
+        .req {
+          color: pink; 
+        }
+    }
+  }
+  label {
+    display: block;
+    margin: 0 0 0.5em 0;
+    color: #397CAC;
+    font-size: pxtoem(16, 16);
+  }
+  input {
+    border: 1px solid grey;
+    padding: 6px 10px;
+    color: dark_grey;
+    font-size: pxtoem(16, 16);
+    margin-top: .5em;
+    margin-bottom: .5em;
+    
+  }
+  textarea {
+    border: 1px solid grey;
+    padding: 6px 10px;
+    width: 100%;
+    color: dark_grey;
+  }
+  small {
+    color: blue;
+    margin: 0 0 0 0.5em;
+  }
+}
+
