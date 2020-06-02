@@ -6,11 +6,18 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-20.times do
-  Tag.create(
-    name: Faker::Music.genre,
-  )
-end
+Tag.create(name: "Hip-Hop")
+Tag.create(name: "Rock")
+Tag.create(name: "Pop")
+Tag.create(name: "Metal")
+Tag.create(name: "Instrumental")
+Tag.create(name: "Lo-Fi")
+Tag.create(name: "Bands")
+Tag.create(name: "Tours")
+Tag.create(name: "Classical")
+Tag.create(name: "Country")
+Tag.create(name: "Bluegrass")
+Tag.create(name: "Jam Bands")
 
 
 
