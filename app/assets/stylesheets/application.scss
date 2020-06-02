@@ -39,12 +39,14 @@
 	margin: 0 auto;
 	background: white; 
 	#logo {
-		float: left;
+		text-align: center;
+		font-weight: lighter;
+		margin-bottom: 1em;
 		a {
 			text-transform: uppercase;
-			font-weight: 700;
+			font-weight: lighter;
 			letter-spacing: -1px;
-			font-size: 1.2rem;
+			font-size: 3rem;
 			text-decoration: none;
 			color: #397CAC;
 		}
@@ -53,15 +55,36 @@
 		{
 			float: right;
 			a {
-				line-height: 60px;
+				line-height: 30px;
 				background: #397CAC;
 				padding: .5em 1em;
 				border-radius: 0.2em;
 				color: white;
 				text-decoration: none;
 				font-weight: 100;
+				margin-bottom: 2em;
+				font-size: 1em;
+				margin-right: 0em;
 			}
 		}
+	#tags
+	{	
+		display: flex;
+		float: left;
+		a {
+				line-height: 30px;
+				background: #white;
+				padding: .1em .25em;
+				border-radius: 0.1em;
+				border: solid #397CAC;
+				border-width: thin;
+				color: #397CAC;
+				text-decoration: none;
+				font-weight: 100;
+				margin-left: .5em;
+				font-size: .58em;
+			}
+	}
 }
 
 #posts { 

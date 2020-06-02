@@ -12,7 +12,7 @@
   %header.main_header.clearfix
     .wrapper
       #logo
-        %p= link_to "absoluteJAMS", root_path
+        %h1= link_to "absoluteJAMS", root_path
       #buttons
         - if user_signed_in?
           = link_to "New Post", new_post_path
@@ -20,7 +20,28 @@
         - else
           = link_to "Sign Up", new_user_registration_path
           = link_to "Sign In", new_user_session_path
+      #tags
+        %p= link_to "Bands", "/tags/Bands"
+        %p= link_to "Bluegrass", "/tags/Bluegrass"
+        %p= link_to "Blues", "/tags/Blues"
+        %p= link_to "Classical", "/tags/Classical"
+        %p= link_to "Country", "/tags/Country"
+        %p= link_to "Electronic", "/tags/Electronic"
+        %p= link_to "Folk", "/tags/Folk"
+        %p= link_to "Hip Hop", "/tags/Hip%20Hop"
+        %p= link_to "Instrumental", "/tags/Instrumental"
+        %p= link_to "Jam Bands", "/tags/Jam%20Bands"
+        %p= link_to "Jazz", "/tags/Jazz"
+        %p= link_to "Latin", "/tags/Latin"
+        %p= link_to "Lo-Fi", "/tags/Lo-Fi"
+        %p= link_to "Metal", "/tags/Metal"
+        %p= link_to "Pop", "/tags/Pop"
+        %p= link_to "Rap", "/tags/Rap"
+        %p= link_to "Rock", "/tags/Rock"
+        %p= link_to "Tours", "/tags/Tours"
+        %p= link_to "World", "/tags/World"
 
+   
 
   .wrapper
     %p.notice= notice
