@@ -9,5 +9,8 @@
 			%p.comment.count
 				= link_to post.comments.count, post
 				Comments
+			%p.likes
+				= post.likes.count
+				= (post.likes.count) == 1 ? 'Like' : 'Likes'
 
 				

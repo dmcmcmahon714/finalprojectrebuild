@@ -1,8 +1,9 @@
-Rails.application.routes.draw do
+ Rails.application.routes.draw do
+  get 'sessions/new'
   devise_for :users
-  resources :posts do
-  	resources :comments
-  end
+	resources :posts do
+		resources :comments, :likes
+	end
 
-  root 'posts#index'
+	root 'posts#index'
 end
