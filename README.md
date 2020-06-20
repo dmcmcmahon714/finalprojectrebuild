@@ -1,24 +1,17 @@
-# README
+This is a full stack web forum built with Ruby on Rails using the devise gem and postgresQL. Commenting and likes with full CRUD functionality make an ideal environment for music discussion. 
+Features: 
+User Authentication 
+Posts 
+Likes 
+Comments 
+Tag Sorting
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Technoligies Used:
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Ruby on Rails
+Devise
+SASS-rails
+PostgresQL
+Simple Form
+Faker
+Bootstrap
